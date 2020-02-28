@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="module" version="1.0.1" client="site" method="upgrade">
-	<name>Instagram Display</name>
+	<name>LJ_Insta</name>
 	<author>Liam Hanks</author>
 	<creationDate>Februray 2020</creationDate>
 	<copyright>Copyright (C) 2005 - 2020 Open Source Matters. All rights reserved.</copyright>
