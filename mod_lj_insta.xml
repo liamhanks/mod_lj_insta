@@ -63,7 +63,7 @@
 					<option value="1">JYES</option>
 					<option value="0">JNO</option>
 				</field>
-				<field type="spacer" name="myspacer" label="It is &lt;b&gt;strongly&lt;/b&gt; recommended that you enable Joomla! caching (even just conservative). &lt;br&gt;The Instagram API limits requests to 200 per hour, so you should only enable this module without caching if you are certain that you understand the implications!" />
+				<field type="spacer" name="myspacer" label="It is &lt;b&gt;strongly&lt;/b&gt; recommended that you enable Joomla! caching (even just conservative). &lt;br&gt;The Instagram API limits requests so you should only enable this module without caching if you are certain that you understand the implications! This module &lt;b&gt;does not&lt;/b&gt; self-limit or monitor API call limits, so refreshing this module too often too quickly can lead to your API token being revoked by Instagram." />
 			<field
 					name="cache"
 					type="list"
