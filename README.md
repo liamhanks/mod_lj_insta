@@ -1,4 +1,4 @@
-# mod_lj_insta
+# LJ_Insta
  
 This is a Joomla! module used to display a user's (your) instagram posts in a module position.
 
