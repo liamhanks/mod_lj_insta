@@ -7,13 +7,13 @@
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
 	<authorEmail>liam@liamhanks.com</authorEmail>
 	<authorUrl>www.liamhanks.com</authorUrl>
-	<version>1.0.1</version>
+	<version>1.0.0</version>
 	<description>Display Instagram posts</description>
 	<updateservers>
 		<server type="extension" priority="1" name="LJ_Insta Module Updates">https://liamhanks.github.io/mod_lj_insta/extension.xml</server>
 	</updateservers>
 	<files>
-		<filename module="mod_custom">mod_lj_insta.php</filename>
+		<filename module="mod_lj_insta">mod_lj_insta.php</filename>
 		<folder>tmpl</folder>
 	</files>
 	<languages>
@@ -21,7 +21,6 @@
 		<language tag="en-GB">en-GB.mod_custom.sys.ini</language>
 	</languages>
 
-	<help key="JHELP_EXTENSIONS_MODULE_MANAGER_CUSTOM_HTML" />
 	<config>
 		<fields name="params">
 			<fieldset name="basic">

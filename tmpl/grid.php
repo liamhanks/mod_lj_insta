@@ -9,18 +9,18 @@
 
 defined('_JEXEC') or die;
 ?>
-<script>
-function resizew(id){
-	var widthofdiv = jQuery('#panel_' + id).width(); //set height to same as width (make squares)
-	jQuery("#image_" + id).css("height",widthofdiv);
-}
-</script>
-<div class="custom<?php echo $moduleclass_sfx; ?> <?php echo $modclass; ?>">
+<div class="ljinsta<?php echo $moduleclass_sfx; ?> <?php echo $modclass; ?>">
 <?php if($response->error){ ?>
 	<div class="alert alert-danger">
 		Error: <?php echo $response->error->message; ?>
 	</div>
 <?php }else{ ?>
+	<script>
+		function resizew(id){
+			var widthofdiv = jQuery('#panel_' + id).width(); //set height to same as width (make squares)
+			jQuery("#image_" + id).css("height",widthofdiv);
+		}
+	</script>
 	<div class="panel panel-default">
 	<?php if($params->get('show_heading')){ ?>
 	<div class="panel-heading">
@@ -53,29 +53,29 @@ function resizew(id){
 		$i++;
 		} ?>
 	</div>
+	<style>
+		.<?php echo $modclass; ?> small a{text-decoration: none; color: inherit;}
+		a.hashtag{text-decoration: none;}
+		.<?php echo $modclass; ?> small a:hover,.<?php echo $modclass; ?> small a:focus,a.hashtag:hover,a.hashtag:focus{text-decoration: underline;}
+		.<?php echo $modclass; ?> .panel-title a{
+			line-height: 30px;
+			vertical-align: super;
+			text-decoration: none;
+		}
+		.<?php echo $modclass; ?> .panel-body{
+			padding: 0 20px 20px 20px;
+		}
+		.<?php echo $modclass; ?> img{
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+			border-radius: 3px;
+			margin-top: 20px;
+		}
+		.<?php echo $modclass; ?> img:hover,<?php echo $modclass; ?> img:focus{
+			opacity: 0.6;
+		}
+	</style>
 <?php } ?>
 </div>
 </div>
-<style>
-.<?php echo $modclass; ?> small a{text-decoration: none; color: inherit;}
-a.hashtag{text-decoration: none;}
-.<?php echo $modclass; ?> small a:hover,.<?php echo $modclass; ?> small a:focus,a.hashtag:hover,a.hashtag:focus{text-decoration: underline;}
-.<?php echo $modclass; ?> .panel-title a{
-	line-height: 30px;
-	vertical-align: super;
-	text-decoration: none;
-}
-.<?php echo $modclass; ?> .panel-body{
-	padding: 0 20px 20px 20px;
-}
-.<?php echo $modclass; ?> img{
-	height: 100%;
-	width: 100%;
-	object-fit: cover;
-	border-radius: 3px;
-	margin-top: 20px;
-}
-.<?php echo $modclass; ?> img:hover,<?php echo $modclass; ?> img:focus{
-	opacity: 0.6;
-}
-</style>
