@@ -63,17 +63,8 @@
 					<option value="1">JYES</option>
 					<option value="0">JNO</option>
 				</field>
-			</fieldset>
-			<fieldset name="advanced">
-				<field
-					name="moduleclass_sfx"
-					type="textarea"
-					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
-					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC"
-					rows="3"
-				/>
-
-				<field
+				<field type="spacer" name="myspacer" label="It is &lt;b&gt;strongly&lt;/b&gt; recommended that you enable Joomla! caching (even just conservative). &lt;br&gt;The Instagram API limits requests to 200 per hour, so you should only enable this module without caching if you are certain that you understand the implications!" />
+			<field
 					name="cache"
 					type="list"
 					label="COM_MODULES_FIELD_CACHING_LABEL"
@@ -84,7 +75,15 @@
 					<option value="1">JGLOBAL_USE_GLOBAL</option>
 					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
 				</field>
-
+			</fieldset>
+			<fieldset name="advanced">
+				<field
+					name="moduleclass_sfx"
+					type="textarea"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC"
+					rows="3"
+				/>
 				<field
 					name="cache_time"
 					type="number"
