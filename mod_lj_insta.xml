@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension type="module" version="1.0.1" client="site" method="upgrade">
+<extension type="module" version="1.0.2" client="site" method="upgrade">
 	<name>LJ_Insta</name>
 	<author>Liam Hanks</author>
 	<creationDate>Februray 2020</creationDate>
@@ -7,7 +7,7 @@
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
 	<authorEmail>liam@liamhanks.com</authorEmail>
 	<authorUrl>www.liamhanks.com</authorUrl>
-	<version>1.0.0</version>
+	<version>1.0.2</version>
 	<description>Display Instagram posts</description>
 	<updateservers>
 		<server type="extension" priority="1" name="LJ_Insta Module Updates">https://liamhanks.github.io/mod_lj_insta/extension.xml</server>
@@ -63,17 +63,8 @@
 					<option value="1">JYES</option>
 					<option value="0">JNO</option>
 				</field>
-			</fieldset>
-			<fieldset name="advanced">
-				<field
-					name="moduleclass_sfx"
-					type="textarea"
-					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
-					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC"
-					rows="3"
-				/>
-
-				<field
+				<field type="spacer" name="myspacer" label="It is &lt;b&gt;strongly&lt;/b&gt; recommended that you enable Joomla! caching (even just conservative). &lt;br&gt;The Instagram API limits requests to 200 per hour, so you should only enable this module without caching if you are certain that you understand the implications!" />
+			<field
 					name="cache"
 					type="list"
 					label="COM_MODULES_FIELD_CACHING_LABEL"
@@ -84,7 +75,15 @@
 					<option value="1">JGLOBAL_USE_GLOBAL</option>
 					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
 				</field>
-
+			</fieldset>
+			<fieldset name="advanced">
+				<field
+					name="moduleclass_sfx"
+					type="textarea"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC"
+					rows="3"
+				/>
 				<field
 					name="cache_time"
 					type="number"
