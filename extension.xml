@@ -5,7 +5,7 @@
         <description>A module to display your Instagram feed</description>
         <element>mod_lj_insta</element>
         <type>module</type>
-        <version>1.0.2</version>
+        <version>1.0.3</version>
         <folder/>
         <infourl title="Git">https://github.com/liamhanks/mod_lj_insta</infourl>
         <downloads>
