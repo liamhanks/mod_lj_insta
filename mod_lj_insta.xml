@@ -9,6 +9,9 @@
 	<authorUrl>www.liamhanks.com</authorUrl>
 	<version>1.0.0</version>
 	<description>Display Instagram posts</description>
+	<updateservers>
+		<server type="extension" priority="1" name="Contact Display Module Updates">https://liamhanks.github.io/mod_lj_insta/extension.xml</server>
+	</updateservers>
 	<files>
 		<filename module="mod_custom">mod_lj_insta.php</filename>
 		<folder>tmpl</folder>
