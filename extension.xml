@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<updates>
+    <update>
+        <name>LJ_Insta</name>
+        <description>A module to display your Instagram feed</description>
+        <element>mod_lj_insta</element>
+        <type>module</type>
+        <version>1.0.0</version>
+        <folder/>
+        <infourl title="Git">https://github.com/liamhanks/mod_lj_insta</infourl>
+        <downloads>
+            <downloadurl type="full" format="zip">https://github.com/liamhanks/mod_lj_insta/archive/master.zip</downloadurl>
+        </downloads>
+        <tags>
+            <tag>stable</tag>
+        </tags>
+        <maintainer>Liam Hanks</maintainer>
+        <maintainerurl>https://www.liamhanks.com</maintainerurl>
+        <section></section>
+        <client>0</client>
+        <php_minimum>5.4.0</php_minimum>
+        <targetplatform name="joomla" version="3.[6789]" />
+    </update>
+</updates>

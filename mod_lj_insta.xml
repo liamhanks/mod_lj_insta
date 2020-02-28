@@ -5,11 +5,10 @@
 	<creationDate>Februray 2020</creationDate>
 	<copyright>Copyright (C) 2005 - 2020 Open Source Matters. All rights reserved.</copyright>
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
-	<authorEmail>liam.hanks@usainteanne.ca</authorEmail>
-	<authorUrl>www.usainteanne.ca</authorUrl>
-	<version>3.0.0</version>
+	<authorEmail>liam@liamhanks.com</authorEmail>
+	<authorUrl>www.liamhanks.com</authorUrl>
+	<version>1.0.0</version>
 	<description>Display Instagram posts</description>
-
 	<files>
 		<filename module="mod_custom">mod_lj_insta.php</filename>
 		<folder>tmpl</folder>
