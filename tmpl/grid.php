@@ -33,7 +33,7 @@ defined('_JEXEC') or die;
 		$i = 1;
 		foreach( $response->data as $item ){ ?>
 		<?php 
-		//Clean up the caption text and add links
+		//Clean up the caption
 		$caption = nl2br($item->caption);
 		$caption = preg_replace('/\./', 'X!X!', $caption);
 		$caption = preg_replace('/(\S)X!X!/', '$1.', $caption);
