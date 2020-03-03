@@ -27,7 +27,8 @@
 				<field 
 					name="api_key" 
 					type="text" 
-					default="" 
+					default=""
+				        class="input-block-level"
 					label="Instagram User Token"
 					description=""
 				/>
