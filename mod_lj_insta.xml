@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension type="module" version="1.0.3" client="site" method="upgrade">
+<extension type="module" version="1.0.4" client="site" method="upgrade">
 	<name>LJ_Insta</name>
 	<author>Liam Hanks</author>
 	<creationDate>Februray 2020</creationDate>
@@ -7,7 +7,7 @@
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
 	<authorEmail>liam@liamhanks.com</authorEmail>
 	<authorUrl>www.liamhanks.com</authorUrl>
-	<version>1.0.3</version>
+	<version>1.0.4</version>
 	<description>Display Instagram posts</description>
 	<updateservers>
 		<server type="extension" priority="1" name="LJ_Insta Module Updates">https://liamhanks.github.io/mod_lj_insta/extension.xml</server>
@@ -27,10 +27,14 @@
 				<field 
 					name="api_key" 
 					type="text" 
-					default=""
-				        class="input-block-level"
+					default="" 
 					label="Instagram User Token"
 					description=""
+				/>
+				<field
+					name="token_time"
+					type="hidden"
+					default="1588095635"
 				/>
 				<field 
 					name="limit" 
@@ -64,7 +68,7 @@
 					<option value="1">JYES</option>
 					<option value="0">JNO</option>
 				</field>
-				<field type="spacer" name="myspacer" label="It is &lt;b&gt;strongly&lt;/b&gt; recommended that you enable Joomla! caching (even just conservative). &lt;br&gt;The Instagram API limits requests so you should only enable this module without caching if you are certain that you understand the implications! This module &lt;b&gt;does not&lt;/b&gt; self-limit or monitor API call limits, so refreshing this module too often too quickly can lead to your API token being revoked by Instagram." />
+				<field type="spacer" name="myspacer" label="It is &lt;b&gt;strongly&lt;/b&gt; recommended that you enable Joomla! caching (even just conservative). &lt;br&gt;The Instagram API limits requests to 200 per hour, so you should only enable this module without caching if you are certain that you understand the implications!" />
 			<field
 					name="cache"
 					type="list"
