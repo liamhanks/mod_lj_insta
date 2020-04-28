@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension type="module" version="1.0.2" client="site" method="upgrade">
+<extension type="module" version="1.0.4" client="site" method="upgrade">
 	<name>LJ_Insta</name>
 	<author>Liam Hanks</author>
 	<creationDate>Februray 2020</creationDate>
@@ -7,7 +7,7 @@
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
 	<authorEmail>liam@liamhanks.com</authorEmail>
 	<authorUrl>www.liamhanks.com</authorUrl>
-	<version>1.0.2</version>
+	<version>1.0.4</version>
 	<description>Display Instagram posts</description>
 	<updateservers>
 		<server type="extension" priority="1" name="LJ_Insta Module Updates">https://liamhanks.github.io/mod_lj_insta/extension.xml</server>
