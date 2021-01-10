@@ -8,9 +8,6 @@
  */
 
 defined('_JEXEC') or die;
-
-//$document = JFactory::getDocument();
-//$document->addScript('/templates/ja_university_t3/js/recliner.min.js');
 ?>
 <div class="ljinsta jumbotron <?php echo $moduleclass_sfx; ?> <?php echo $modclass; ?>" style="padding-top: 20px;">
 	<div class="container">
@@ -41,7 +38,7 @@ defined('_JEXEC') or die;
 			$break = 12 / $params->get('per_row');
 			?>
 				<div id="panel_<?php echo $item->id; ?>" class="col-xs-6 col-md-<?php echo $params->get('per_row'); ?>">
-					<a href="<?php echo $item->permalink; ?>" target="_blank" rel="nofollow"><img id="image_<?php echo $item->id; ?>" src="images/photos.php?id=<?php echo $item->id; ?>&1=<?php echo $item->var1 ?>&2=<?php echo $item->var2 ?>&w=340" onload="resizew(<?php echo "'" . $item->id . "'"; ?>);" title="<?php echo strip_tags($caption); ?>" loading="lazy"/></a>
+					<a href="<?php echo $item->permalink; ?>" target="_blank" rel="nofollow" <?php if(isset($item->thumbnail_url)){ ?>class="video"<?php } ?>><img id="image_<?php echo $item->id; ?>" src="images/photos.php?id=<?php echo $item->id; ?>&1=<?php echo $item->var1 ?>&2=<?php echo $item->var2 ?>&w=340" onload="resizew(<?php echo "'" . $item->id . "'"; ?>);" title="<?php echo strip_tags($caption); ?>" loading="lazy"/></a>
 				</div>
 			<?php if($i % $break === 0){ ?>
 				<div class="clearfix hidden-xs"></div>
@@ -74,6 +71,24 @@ defined('_JEXEC') or die;
 			}
 			.<?php echo $modclass; ?> img:hover,<?php echo $modclass; ?> img:focus{
 				opacity: 0.6;
+			}
+			.<?php echo $modclass; ?> .video{
+				position: relative;
+				width: 100%;
+				height: 100%;
+			}
+			.<?php echo $modclass; ?> .video::before{
+				content: "\f04b";
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 100%;
+				width: 100%;
+				text-align: center;
+				font-size: 3rem;
+				font-family: FontAwesome;
+				color: white;
+				opacity: 0.8;
 			}
 		</style>
 	<?php } ?>
